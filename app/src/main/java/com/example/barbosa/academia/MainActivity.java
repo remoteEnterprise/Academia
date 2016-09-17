@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MainActivity.this, ListaExercicioActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putInt("tipo",i+1);
+                bundle.putInt("tipo",i);
                 intent.putExtras(bundle);
                 startActivity(intent);
 
